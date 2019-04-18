@@ -1,0 +1,114 @@
+\documentclass[specification,annotation]{itmo-student-thesis}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage[russian]{babel}
+\usepackage{multirow}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\selectlanguage{russian}
+
+\newcommand{\todo}[1]{\vspace{5 mm}\par \noindent
+\marginpar{ToDo}
+\framebox{\begin{minipage}[c]{0.95 \textwidth}
+    \tt #1 \end{minipage}}\vspace{5 mm}\par}
+
+\addbibresource{bachelor-thesis.bib}
+
+\begin{document}
+
+\studygroup{M3439}
+\title{Построение векторного представления предложения с использованием дерева синтаксического разбора}
+\author{Пересадин Илья Валерьевич}{Пересадин И.В.}
+\supervisor{Фильченков Андрей Александрович}{Фильченков А.А.}{доц. каф КТ, к.ф-м.н.}{}
+\publishyear{2017}
+
+\startdate{01}{сентября}{2016}
+\finishdate{31}{мая}{2017}
+\thedefencedate{}
+
+\technicalspec{
+    В рамках данной работы требуется разработать модель для построения векторного представления предложения
+    на основе дерева синтаксического разбора. 
+    Требуется изучить существующие методы и сравнить их предложенным решением.
+}
+
+\plannedcontents{
+  \begin{enumerate}
+    \item Постановка задачи и обзор предметной области
+    \item Описание предложенного решения
+    \item Экспериментальная проверка метода и сравнение с существующими моделями
+  \end{enumerate}
+}
+
+\plannedsources{
+ \begin{enumerate}
+    \item Yoon Kim, Convolutional Neural Networks for Sentence Classification
+    \item Richard Socher et al, Recursive Deep Models for Semantic Compositionality
+Over a Sentiment Treebank
+  \end{enumerate}
+}
+
+\addstage{Ознакомление с предментой областью}{01.02.2017}
+\addstage{Разработка моделей, основанных на архитектурах LSTM и CNN}{01.03.2017}
+\addstage{Реализация и тестирование придуманных моделей}{10.03.2017}
+\addstage{Разработка моделей, основанных на дереве синтаксического разбора}{01.04.2017}
+\addstage{Тестирование моделей на основе дерева синтаксического разбора}{15.04.2017}
+\addstage{Написание пояснительной записки}{30.05.2017}
+
+\researchaim{
+Разработать модель для построения векторного представления предложения на основе дерева синтаксического разбора}
+  
+\researchtargets{
+  \begin{enumerate}
+    \item формулирование проблем, возникающих при построении векторного представления предложения существующими методами
+    \item реализация методов, которые решают эти проблемы
+  \end{enumerate}
+}
+  
+\advancedtechnologyusage{
+    Были использованы язык программирования Python, библиотеки numpy, scikit-learn и matplotlib,
+    интегрированная среда разработки PyCharm, фрэймворк для символьных вычислений Tensorflow,
+    система контроля версий Git и система компьютерной верстки LaTeX.
+}
+
+\researchsummary{
+    Разработана модель для построения векторного представления предложения на основе дерева синтаксического разбора
+}
+
+\researchfunding{
+    Грантов или других форм государственной поддержи и субсидирования в процессе работы не предусматривалось.
+}
+ 
+\researchpublications{
+    Работа не была опубликована.
+}
+
+\secretary{}
+
+%% Эта команда генерирует титульный лист и аннотацию.
+\maketitle{Бакалавр}
+
+% Оглавление
+\tableofcontents
+
+% Chapters
+\input{chapters/intro.tex}
+
+\input{chapters/chapter1.tex}
+\input{chapters/chapter2.tex}
+\input{chapters/chapter3.tex}
+
+\startconclusionpage
+
+%\input{chapters/outro.tex}
+
+\printmainbibliography
+
+\appendix
+
+%\input{appendicies/adagrad_1.tex}
+%\input{appendicies/adagrad_2.tex}
+%\input{appendicies/adam_1.tex}
+%\input{appendicies/adam_2.tex}
+\end{document}

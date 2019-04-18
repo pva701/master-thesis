@@ -1,0 +1,14 @@
+*.aux
+*.bcf
+*.log
+*.pdf
+*.run.xml
+*.gz
+*.tct
+*.toc
+*.dvi
+*.bbl
+*.blg
+build
+.DS_store
+presentation

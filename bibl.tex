@@ -1,8 +1,14 @@
 \begin{filecontents}{master-thesis.bib}
 @online{double-spending,
   title = {Double-spending},
-  author = {BitcoinWiki},
   url={https://en.bitcoinwiki.org/wiki/Double-spending},
+  urldate={2019-04-24},
+  langid = {english}
+}
+
+@online{sha-2,
+  title = {SHA-2},
+  url={https://en.wikipedia.org/wiki/SHA-2},
   urldate={2019-04-24},
   langid = {english}
 }
@@ -17,11 +23,18 @@
 
 @online{pow,
   title = {Proof-of-Work},
-  author = {BitcoinWiki},
   url={https://ru.bitcoinwiki.org/wiki/Proof-of-Work},
   urldate={2019-04-24},
   langid = {english}
 }
+
+@online{pos,
+  title = {Proof-of-stake},
+  url={https://en.wikipedia.org/wiki/Proof-of-stake},
+  urldate={2019-04-24},
+  langid = {english}
+}
+
 
 @misc{hashcash,
   author = {Adam Back and others},
@@ -88,5 +101,146 @@
   year={2019},
   url = {https://internauka.org/archive2/moluch/13(113).pdf},
   langid={russian}
+}
+
+@article{DBLP:journals/corr/DeckerSW14,
+  author    = {Christian Decker and
+               Jochen Seidel and
+               Roger Wattenhofer},
+  title     = {Bitcoin Meets Strong Consistency},
+  journal   = {CoRR},
+  volume    = {abs/1412.7935},
+  year      = {2014},
+  url       = {http://arxiv.org/abs/1412.7935},
+  archivePrefix = {arXiv},
+  eprint    = {1412.7935},
+  timestamp = {Mon, 13 Aug 2018 16:46:37 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/DeckerSW14},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  langid={english}
+}
+
+@article{Lamport:1982,
+ author = {Lamport, Leslie and Shostak, Robert and Pease, Marshall},
+ title = {The Byzantine Generals Problem},
+ journal = {ACM Trans. Program. Lang. Syst.},
+ issue_date = {July 1982},
+ volume = {4},
+ number = {3},
+ month = jul,
+ year = {1982},
+ issn = {0164-0925},
+ pages = {382--401},
+ numpages = {20},
+ url = {http://doi.acm.org/10.1145/357172.357176},
+ doi = {10.1145/357172.357176},
+ acmid = {357176},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ langid={english}
+} 
+
+@inproceedings{pbft,
+ author = {Castro, Miguel and Liskov, Barbara},
+ title = {Practical Byzantine Fault Tolerance},
+ booktitle = {Proceedings of the Third Symposium on Operating Systems Design and Implementation},
+ series = {OSDI '99},
+ year = {1999},
+ isbn = {1-880446-39-1},
+ location = {New Orleans, Louisiana, USA},
+ pages = {173--186},
+ numpages = {14},
+ url = {http://dl.acm.org/citation.cfm?id=296806.296824},
+ acmid = {296824},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+ langid={english}
+} 
+
+@article{qu,
+ author = {Abd-El-Malek, Michael and Ganger, Gregory R. and Goodson, Garth R. and Reiter, Michael K. and Wylie, Jay J.},
+ title = {Fault-scalable Byzantine Fault-tolerant Services},
+ journal = {SIGOPS Oper. Syst. Rev.},
+ issue_date = {December 2005},
+ volume = {39},
+ number = {5},
+ month = oct,
+ year = {2005},
+ issn = {0163-5980},
+ pages = {59--74},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/1095809.1095817},
+ doi = {10.1145/1095809.1095817},
+ acmid = {1095817},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {byzantine fault-tolerance, fault-scalability, quorums, replicated state machines, services},
+ langid={english}
+}
+
+@inproceedings{hq,
+author = {Cowling, James and S. Myers, Daniel and Liskov, Barbara and Rodrigues, Rodrigo and Shrira, Liuba},
+year = {2006},
+month = {01},
+pages = {177-190},
+title = {HQ Replication: A Hybrid Quorum Protocol for Byzantine Fault Tolerance},
+ langid={english}
+}
+
+@article{Zyzzyva,
+ author = {Kotla, Ramakrishna and Alvisi, Lorenzo and Dahlin, Mike and Clement, Allen and Wong, Edmund},
+ title = {Zyzzyva: Speculative Byzantine Fault Tolerance},
+ journal = {SIGOPS Oper. Syst. Rev.},
+ issue_date = {December 2007},
+ volume = {41},
+ number = {6},
+ month = oct,
+ year = {2007},
+ issn = {0163-5980},
+ pages = {45--58},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/1323293.1294267},
+ doi = {10.1145/1323293.1294267},
+ acmid = {1294267},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {byzantine fault tolerance, output commit, replication, speculative execution},
+  langid={english}
+} 
+
+@article{DBLP:journals/corr/EyalS13,
+  author    = {Ittay Eyal and
+               Emin G{\"{u}}n Sirer},
+  title     = {Majority is not Enough: Bitcoin Mining is Vulnerable},
+  journal   = {CoRR},
+  volume    = {abs/1311.0243},
+  year      = {2013},
+  url       = {http://arxiv.org/abs/1311.0243},
+  archivePrefix = {arXiv},
+  eprint    = {1311.0243},
+  timestamp = {Mon, 13 Aug 2018 16:46:18 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/EyalS13},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+   langid={english}
+}
+
+@misc{buterin2014ethereum,
+  author = {Vitalik Buterin},
+  title = {Ethereum: A next-generation smart contract and decentralized application platform},
+  year = {2014},
+  note = {Accessed: 2016-08-22},
+  url = {https://github.com/ethereum/wiki/wiki/White-Paper},
+  langid={english}
+}
+
+@inproceedings{cardano,
+author = {Kiayias, Aggelos and Russell, Alexander and David, Bernardo and Oliynykov, Roman},
+year = {2017},
+month = {07},
+pages = {357-388},
+title = {Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol},
+isbn = {978-3-319-63687-0},
+doi = {10.1007/978-3-319-63688-7_12},
+ langid={english}
 }
 \end{filecontents}
